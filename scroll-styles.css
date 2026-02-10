@@ -1,0 +1,17 @@
+.scroll-prompt {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 1.2rem;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    animation: bouncePrompt 2s infinite;
+}
+
+@keyframes bouncePrompt {
+    0%, 20%, 50%, 80%, 100% {transform: translateX(-50%) translateY(0);}
+    40% {transform: translateX(-50%) translateY(-10px);}
+    60% {transform: translateX(-50%) translateY(-5px);}
+}
